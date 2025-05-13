@@ -1,0 +1,43 @@
+name: Generate RouterOS China IP Script
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # 每天UTC 2点执行，可根据需要调整
+  workflow_dispatch:
+
+jobs:
+  generate-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download chnroutes.txt
+        run: |
+          curl -sSL -o chnroutes.txt https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
+
+      - name: Generate RouterOS script
+        run: |
+          GATEWAY="pppoe-out1"
+          NOW=$(date "+%Y年 %m月%d日 %A %H时%M分%S秒 %Z")
+          {
+            echo "# RouterOS v7 中国 IP 路由表脚本"
+            echo "# 生成时间: $NOW"
+            echo "# 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt"
+            echo "# 网关: $GATEWAY"
+            echo "/ip route remove [find where comment~\"China Route\"]"
+            echo "/ip route"
+            awk -v gw="$GATEWAY" '{print "add dst-address="$1" gateway="gw" comment=\"China Route: "$1"\""}' chnroutes.txt
+            echo "# 脚本结束"
+            echo ":put \"中国 IP 路由已添加 (网关: $GATEWAY)\""
+          } > routeros-china-ip.rsc
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain routeros-china-ip.rsc) ]]; then
+            git add routeros-china-ip.rsc
+            git commit -m "自动更新 RouterOS 中国 IP 路由表脚本"
+            git push
+          fi

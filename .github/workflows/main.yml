@@ -29,7 +29,7 @@ jobs:
             echo "/ip route"
             awk -v gw="$GATEWAY" '{print "add dst-address="$1" gateway="gw" comment=\"China Route: "$1"\""}' chnroutes.txt
             echo "# 脚本结束"
-            echo ":put \"中国 IP 路由已添加 (网关: $GATEWAY)\""
+            echo ":put \"done\""
           } > routeros-china-ip.rsc
 
       - name: Commit and push if changed

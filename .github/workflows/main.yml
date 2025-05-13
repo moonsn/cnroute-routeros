@@ -33,9 +33,12 @@ jobs:
           } > routeros-china-ip.rsc
 
       - name: Commit and push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           if [[ -n $(git status --porcelain routeros-china-ip.rsc) ]]; then
             git add routeros-china-ip.rsc
             git commit -m "自动更新 RouterOS 中国 IP 路由表脚本"

@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 05月19日 Monday 07时10分11秒 UTC
+# 生成时间: 2025年 05月19日 Monday 08时14分37秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -393,7 +393,6 @@ add dst-address=45.80.188.0/24 gateway=pppoe-out1 comment="China Route: 45.80.18
 add dst-address=45.80.190.0/24 gateway=pppoe-out1 comment="China Route: 45.80.190.0/24"
 add dst-address=45.81.34.0/24 gateway=pppoe-out1 comment="China Route: 45.81.34.0/24"
 add dst-address=45.85.76.0/22 gateway=pppoe-out1 comment="China Route: 45.85.76.0/22"
-add dst-address=45.91.83.0/24 gateway=pppoe-out1 comment="China Route: 45.91.83.0/24"
 add dst-address=45.92.158.0/23 gateway=pppoe-out1 comment="China Route: 45.92.158.0/23"
 add dst-address=45.113.20.0/22 gateway=pppoe-out1 comment="China Route: 45.113.20.0/22"
 add dst-address=45.113.24.0/22 gateway=pppoe-out1 comment="China Route: 45.113.24.0/22"
@@ -2785,11 +2784,6 @@ add dst-address=153.118.0.0/15 gateway=pppoe-out1 comment="China Route: 153.118.
 add dst-address=154.8.48.0/20 gateway=pppoe-out1 comment="China Route: 154.8.48.0/20"
 add dst-address=154.8.128.0/17 gateway=pppoe-out1 comment="China Route: 154.8.128.0/17"
 add dst-address=154.9.244.0/22 gateway=pppoe-out1 comment="China Route: 154.9.244.0/22"
-add dst-address=154.19.72.0/21 gateway=pppoe-out1 comment="China Route: 154.19.72.0/21"
-add dst-address=154.19.88.0/22 gateway=pppoe-out1 comment="China Route: 154.19.88.0/22"
-add dst-address=154.19.100.0/22 gateway=pppoe-out1 comment="China Route: 154.19.100.0/22"
-add dst-address=154.19.112.0/20 gateway=pppoe-out1 comment="China Route: 154.19.112.0/20"
-add dst-address=154.23.188.0/22 gateway=pppoe-out1 comment="China Route: 154.23.188.0/22"
 add dst-address=154.89.32.0/20 gateway=pppoe-out1 comment="China Route: 154.89.32.0/20"
 add dst-address=154.91.32.0/23 gateway=pppoe-out1 comment="China Route: 154.91.32.0/23"
 add dst-address=154.91.34.0/24 gateway=pppoe-out1 comment="China Route: 154.91.34.0/24"

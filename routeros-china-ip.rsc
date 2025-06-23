@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 06月23日 Monday 00时51分18秒 UTC
+# 生成时间: 2025年 06月23日 Monday 02时49分02秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -245,7 +245,6 @@ add dst-address=43.224.24.0/22 gateway=pppoe-out1 comment="China Route: 43.224.2
 add dst-address=43.224.52.0/23 gateway=pppoe-out1 comment="China Route: 43.224.52.0/23"
 add dst-address=43.224.56.0/22 gateway=pppoe-out1 comment="China Route: 43.224.56.0/22"
 add dst-address=43.224.80.0/22 gateway=pppoe-out1 comment="China Route: 43.224.80.0/22"
-add dst-address=43.224.208.0/22 gateway=pppoe-out1 comment="China Route: 43.224.208.0/22"
 add dst-address=43.224.240.0/24 gateway=pppoe-out1 comment="China Route: 43.224.240.0/24"
 add dst-address=43.224.248.0/23 gateway=pppoe-out1 comment="China Route: 43.224.248.0/23"
 add dst-address=43.225.76.0/22 gateway=pppoe-out1 comment="China Route: 43.225.76.0/22"
@@ -256,9 +255,8 @@ add dst-address=43.225.255.0/24 gateway=pppoe-out1 comment="China Route: 43.225.
 add dst-address=43.226.32.0/19 gateway=pppoe-out1 comment="China Route: 43.226.32.0/19"
 add dst-address=43.226.64.0/20 gateway=pppoe-out1 comment="China Route: 43.226.64.0/20"
 add dst-address=43.226.116.0/22 gateway=pppoe-out1 comment="China Route: 43.226.116.0/22"
-add dst-address=43.226.120.0/22 gateway=pppoe-out1 comment="China Route: 43.226.120.0/22"
 add dst-address=43.226.128.0/19 gateway=pppoe-out1 comment="China Route: 43.226.128.0/19"
-add dst-address=43.226.160.0/21 gateway=pppoe-out1 comment="China Route: 43.226.160.0/21"
+add dst-address=43.226.164.0/22 gateway=pppoe-out1 comment="China Route: 43.226.164.0/22"
 add dst-address=43.226.236.0/22 gateway=pppoe-out1 comment="China Route: 43.226.236.0/22"
 add dst-address=43.227.56.0/21 gateway=pppoe-out1 comment="China Route: 43.227.56.0/21"
 add dst-address=43.227.64.0/21 gateway=pppoe-out1 comment="China Route: 43.227.64.0/21"
@@ -1505,7 +1503,6 @@ add dst-address=103.246.152.0/22 gateway=pppoe-out1 comment="China Route: 103.24
 add dst-address=103.246.244.0/22 gateway=pppoe-out1 comment="China Route: 103.246.244.0/22"
 add dst-address=103.247.168.0/22 gateway=pppoe-out1 comment="China Route: 103.247.168.0/22"
 add dst-address=103.247.176.0/22 gateway=pppoe-out1 comment="China Route: 103.247.176.0/22"
-add dst-address=103.248.102.0/23 gateway=pppoe-out1 comment="China Route: 103.248.102.0/23"
 add dst-address=103.248.152.0/22 gateway=pppoe-out1 comment="China Route: 103.248.152.0/22"
 add dst-address=103.248.224.0/22 gateway=pppoe-out1 comment="China Route: 103.248.224.0/22"
 add dst-address=103.249.52.0/22 gateway=pppoe-out1 comment="China Route: 103.249.52.0/22"

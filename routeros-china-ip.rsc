@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 06月23日 Monday 08时14分33秒 UTC
+# 生成时间: 2025年 06月23日 Monday 09时12分51秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -1324,8 +1324,7 @@ add dst-address=103.198.60.0/22 gateway=pppoe-out1 comment="China Route: 103.198
 add dst-address=103.198.124.0/22 gateway=pppoe-out1 comment="China Route: 103.198.124.0/22"
 add dst-address=103.200.136.0/21 gateway=pppoe-out1 comment="China Route: 103.200.136.0/21"
 add dst-address=103.200.144.0/21 gateway=pppoe-out1 comment="China Route: 103.200.144.0/21"
-add dst-address=103.200.220.0/23 gateway=pppoe-out1 comment="China Route: 103.200.220.0/23"
-add dst-address=103.200.222.0/24 gateway=pppoe-out1 comment="China Route: 103.200.222.0/24"
+add dst-address=103.200.220.0/22 gateway=pppoe-out1 comment="China Route: 103.200.220.0/22"
 add dst-address=103.202.0.0/19 gateway=pppoe-out1 comment="China Route: 103.202.0.0/19"
 add dst-address=103.202.32.0/20 gateway=pppoe-out1 comment="China Route: 103.202.32.0/20"
 add dst-address=103.202.92.0/22 gateway=pppoe-out1 comment="China Route: 103.202.92.0/22"
@@ -2972,7 +2971,7 @@ add dst-address=175.186.0.0/15 gateway=pppoe-out1 comment="China Route: 175.186.
 add dst-address=175.188.188.0/22 gateway=pppoe-out1 comment="China Route: 175.188.188.0/22"
 add dst-address=175.190.24.0/21 gateway=pppoe-out1 comment="China Route: 175.190.24.0/21"
 add dst-address=175.190.126.0/23 gateway=pppoe-out1 comment="China Route: 175.190.126.0/23"
-add dst-address=178.236.46.0/23 gateway=pppoe-out1 comment="China Route: 178.236.46.0/23"
+add dst-address=178.236.47.0/24 gateway=pppoe-out1 comment="China Route: 178.236.47.0/24"
 add dst-address=180.76.16.0/20 gateway=pppoe-out1 comment="China Route: 180.76.16.0/20"
 add dst-address=180.76.32.0/19 gateway=pppoe-out1 comment="China Route: 180.76.32.0/19"
 add dst-address=180.76.64.0/18 gateway=pppoe-out1 comment="China Route: 180.76.64.0/18"

@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 08月04日 Monday 16时13分53秒 UTC
+# 生成时间: 2025年 08月04日 Monday 17时15分40秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -1756,10 +1756,13 @@ add dst-address=115.84.0.0/18 gateway=pppoe-out1 comment="China Route: 115.84.0.
 add dst-address=115.85.192.0/18 gateway=pppoe-out1 comment="China Route: 115.85.192.0/18"
 add dst-address=115.102.0.0/16 gateway=pppoe-out1 comment="China Route: 115.102.0.0/16"
 add dst-address=115.120.0.0/17 gateway=pppoe-out1 comment="China Route: 115.120.0.0/17"
-add dst-address=115.120.128.0/20 gateway=pppoe-out1 comment="China Route: 115.120.128.0/20"
+add dst-address=115.120.128.0/21 gateway=pppoe-out1 comment="China Route: 115.120.128.0/21"
+add dst-address=115.120.136.0/22 gateway=pppoe-out1 comment="China Route: 115.120.136.0/22"
+add dst-address=115.120.140.0/23 gateway=pppoe-out1 comment="China Route: 115.120.140.0/23"
 add dst-address=115.120.144.0/23 gateway=pppoe-out1 comment="China Route: 115.120.144.0/23"
 add dst-address=115.120.148.0/22 gateway=pppoe-out1 comment="China Route: 115.120.148.0/22"
-add dst-address=115.120.152.0/21 gateway=pppoe-out1 comment="China Route: 115.120.152.0/21"
+add dst-address=115.120.152.0/22 gateway=pppoe-out1 comment="China Route: 115.120.152.0/22"
+add dst-address=115.120.156.0/23 gateway=pppoe-out1 comment="China Route: 115.120.156.0/23"
 add dst-address=115.120.184.0/21 gateway=pppoe-out1 comment="China Route: 115.120.184.0/21"
 add dst-address=115.120.192.0/18 gateway=pppoe-out1 comment="China Route: 115.120.192.0/18"
 add dst-address=115.124.16.0/20 gateway=pppoe-out1 comment="China Route: 115.124.16.0/20"

@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 08月06日 Wednesday 00时51分54秒 UTC
+# 生成时间: 2025年 08月06日 Wednesday 02时56分19秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -2671,7 +2671,9 @@ add dst-address=154.89.32.0/20 gateway=pppoe-out1 comment="China Route: 154.89.3
 add dst-address=154.89.49.0/24 gateway=pppoe-out1 comment="China Route: 154.89.49.0/24"
 add dst-address=154.89.50.0/23 gateway=pppoe-out1 comment="China Route: 154.89.50.0/23"
 add dst-address=154.89.52.0/22 gateway=pppoe-out1 comment="China Route: 154.89.52.0/22"
-add dst-address=154.89.56.0/21 gateway=pppoe-out1 comment="China Route: 154.89.56.0/21"
+add dst-address=154.89.56.0/22 gateway=pppoe-out1 comment="China Route: 154.89.56.0/22"
+add dst-address=154.89.61.0/24 gateway=pppoe-out1 comment="China Route: 154.89.61.0/24"
+add dst-address=154.89.62.0/23 gateway=pppoe-out1 comment="China Route: 154.89.62.0/23"
 add dst-address=154.213.189.0/24 gateway=pppoe-out1 comment="China Route: 154.213.189.0/24"
 add dst-address=155.126.176.0/23 gateway=pppoe-out1 comment="China Route: 155.126.176.0/23"
 add dst-address=156.107.160.0/24 gateway=pppoe-out1 comment="China Route: 156.107.160.0/24"
@@ -3239,7 +3241,6 @@ add dst-address=203.119.28.0/23 gateway=pppoe-out1 comment="China Route: 203.119
 add dst-address=203.119.30.0/24 gateway=pppoe-out1 comment="China Route: 203.119.30.0/24"
 add dst-address=203.119.80.0/23 gateway=pppoe-out1 comment="China Route: 203.119.80.0/23"
 add dst-address=203.119.83.0/24 gateway=pppoe-out1 comment="China Route: 203.119.83.0/24"
-add dst-address=203.119.85.0/24 gateway=pppoe-out1 comment="China Route: 203.119.85.0/24"
 add dst-address=203.119.115.0/24 gateway=pppoe-out1 comment="China Route: 203.119.115.0/24"
 add dst-address=203.119.128.0/19 gateway=pppoe-out1 comment="China Route: 203.119.128.0/19"
 add dst-address=203.119.160.0/24 gateway=pppoe-out1 comment="China Route: 203.119.160.0/24"

@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2025年 09月03日 Wednesday 08时12分21秒 UTC
+# 生成时间: 2025年 09月03日 Wednesday 09时09分29秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -1269,6 +1269,7 @@ add dst-address=103.227.76.0/22 gateway=pppoe-out1 comment="China Route: 103.227
 add dst-address=103.227.80.0/22 gateway=pppoe-out1 comment="China Route: 103.227.80.0/22"
 add dst-address=103.227.120.0/22 gateway=pppoe-out1 comment="China Route: 103.227.120.0/22"
 add dst-address=103.227.136.0/22 gateway=pppoe-out1 comment="China Route: 103.227.136.0/22"
+add dst-address=103.227.228.0/22 gateway=pppoe-out1 comment="China Route: 103.227.228.0/22"
 add dst-address=103.228.12.0/22 gateway=pppoe-out1 comment="China Route: 103.228.12.0/22"
 add dst-address=103.228.136.0/22 gateway=pppoe-out1 comment="China Route: 103.228.136.0/22"
 add dst-address=103.228.160.0/22 gateway=pppoe-out1 comment="China Route: 103.228.160.0/22"
@@ -2754,10 +2755,6 @@ add dst-address=163.244.246.0/24 gateway=pppoe-out1 comment="China Route: 163.24
 add dst-address=166.111.0.0/16 gateway=pppoe-out1 comment="China Route: 166.111.0.0/16"
 add dst-address=167.139.0.0/16 gateway=pppoe-out1 comment="China Route: 167.139.0.0/16"
 add dst-address=167.220.244.0/22 gateway=pppoe-out1 comment="China Route: 167.220.244.0/22"
-add dst-address=168.159.144.0/21 gateway=pppoe-out1 comment="China Route: 168.159.144.0/21"
-add dst-address=168.159.152.0/22 gateway=pppoe-out1 comment="China Route: 168.159.152.0/22"
-add dst-address=168.159.156.0/23 gateway=pppoe-out1 comment="China Route: 168.159.156.0/23"
-add dst-address=168.159.158.0/24 gateway=pppoe-out1 comment="China Route: 168.159.158.0/24"
 add dst-address=168.160.0.0/17 gateway=pppoe-out1 comment="China Route: 168.160.0.0/17"
 add dst-address=168.160.152.0/24 gateway=pppoe-out1 comment="China Route: 168.160.152.0/24"
 add dst-address=168.160.158.0/23 gateway=pppoe-out1 comment="China Route: 168.160.158.0/23"

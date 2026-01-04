@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2026年 01月04日 Sunday 07时12分33秒 UTC
+# 生成时间: 2026年 01月04日 Sunday 08时13分38秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -1905,7 +1905,8 @@ add dst-address=117.126.0.0/16 gateway=pppoe-out1 comment="China Route: 117.126.
 add dst-address=117.128.0.0/10 gateway=pppoe-out1 comment="China Route: 117.128.0.0/10"
 add dst-address=118.24.0.0/15 gateway=pppoe-out1 comment="China Route: 118.24.0.0/15"
 add dst-address=118.26.48.0/22 gateway=pppoe-out1 comment="China Route: 118.26.48.0/22"
-add dst-address=118.26.64.0/21 gateway=pppoe-out1 comment="China Route: 118.26.64.0/21"
+add dst-address=118.26.64.0/23 gateway=pppoe-out1 comment="China Route: 118.26.64.0/23"
+add dst-address=118.26.68.0/23 gateway=pppoe-out1 comment="China Route: 118.26.68.0/23"
 add dst-address=118.26.72.0/22 gateway=pppoe-out1 comment="China Route: 118.26.72.0/22"
 add dst-address=118.26.96.0/21 gateway=pppoe-out1 comment="China Route: 118.26.96.0/21"
 add dst-address=118.26.116.0/22 gateway=pppoe-out1 comment="China Route: 118.26.116.0/22"

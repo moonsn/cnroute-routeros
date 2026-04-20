@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2026年 04月20日 Monday 07时31分54秒 UTC
+# 生成时间: 2026年 04月20日 Monday 08时39分33秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -64,6 +64,10 @@ add dst-address=14.16.0.0/12 gateway=pppoe-out1 comment="China Route: 14.16.0.0/
 add dst-address=14.103.0.0/16 gateway=pppoe-out1 comment="China Route: 14.103.0.0/16"
 add dst-address=14.104.0.0/13 gateway=pppoe-out1 comment="China Route: 14.104.0.0/13"
 add dst-address=14.112.0.0/12 gateway=pppoe-out1 comment="China Route: 14.112.0.0/12"
+add dst-address=14.130.0.0/24 gateway=pppoe-out1 comment="China Route: 14.130.0.0/24"
+add dst-address=14.130.255.0/24 gateway=pppoe-out1 comment="China Route: 14.130.255.0/24"
+add dst-address=14.131.0.0/24 gateway=pppoe-out1 comment="China Route: 14.131.0.0/24"
+add dst-address=14.131.255.0/24 gateway=pppoe-out1 comment="China Route: 14.131.255.0/24"
 add dst-address=14.134.0.0/15 gateway=pppoe-out1 comment="China Route: 14.134.0.0/15"
 add dst-address=14.144.0.0/12 gateway=pppoe-out1 comment="China Route: 14.144.0.0/12"
 add dst-address=14.204.0.0/15 gateway=pppoe-out1 comment="China Route: 14.204.0.0/15"
@@ -2233,6 +2237,8 @@ add dst-address=121.58.156.0/22 gateway=pppoe-out1 comment="China Route: 121.58.
 add dst-address=121.60.0.0/14 gateway=pppoe-out1 comment="China Route: 121.60.0.0/14"
 add dst-address=121.69.0.0/16 gateway=pppoe-out1 comment="China Route: 121.69.0.0/16"
 add dst-address=121.70.0.0/17 gateway=pppoe-out1 comment="China Route: 121.70.0.0/17"
+add dst-address=121.71.0.0/24 gateway=pppoe-out1 comment="China Route: 121.71.0.0/24"
+add dst-address=121.71.255.0/24 gateway=pppoe-out1 comment="China Route: 121.71.255.0/24"
 add dst-address=121.76.0.0/15 gateway=pppoe-out1 comment="China Route: 121.76.0.0/15"
 add dst-address=121.79.128.0/20 gateway=pppoe-out1 comment="China Route: 121.79.128.0/20"
 add dst-address=121.79.144.0/22 gateway=pppoe-out1 comment="China Route: 121.79.144.0/22"

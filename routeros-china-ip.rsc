@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2026年 05月25日 Monday 05时27分06秒 UTC
+# 生成时间: 2026年 05月25日 Monday 07时23分34秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -3373,7 +3373,8 @@ add dst-address=210.192.120.0/21 gateway=pppoe-out1 comment="China Route: 210.19
 add dst-address=211.64.0.0/13 gateway=pppoe-out1 comment="China Route: 211.64.0.0/13"
 add dst-address=211.76.179.0/24 gateway=pppoe-out1 comment="China Route: 211.76.179.0/24"
 add dst-address=211.80.0.0/13 gateway=pppoe-out1 comment="China Route: 211.80.0.0/13"
-add dst-address=211.88.0.0/15 gateway=pppoe-out1 comment="China Route: 211.88.0.0/15"
+add dst-address=211.88.0.0/16 gateway=pppoe-out1 comment="China Route: 211.88.0.0/16"
+add dst-address=211.89.230.0/23 gateway=pppoe-out1 comment="China Route: 211.89.230.0/23"
 add dst-address=211.90.0.0/17 gateway=pppoe-out1 comment="China Route: 211.90.0.0/17"
 add dst-address=211.90.128.0/18 gateway=pppoe-out1 comment="China Route: 211.90.128.0/18"
 add dst-address=211.90.192.0/20 gateway=pppoe-out1 comment="China Route: 211.90.192.0/20"
@@ -3462,7 +3463,8 @@ add dst-address=211.144.120.0/21 gateway=pppoe-out1 comment="China Route: 211.14
 add dst-address=211.144.192.0/18 gateway=pppoe-out1 comment="China Route: 211.144.192.0/18"
 add dst-address=211.145.0.0/18 gateway=pppoe-out1 comment="China Route: 211.145.0.0/18"
 add dst-address=211.145.64.0/20 gateway=pppoe-out1 comment="China Route: 211.145.64.0/20"
-add dst-address=211.146.0.0/16 gateway=pppoe-out1 comment="China Route: 211.146.0.0/16"
+add dst-address=211.146.0.0/19 gateway=pppoe-out1 comment="China Route: 211.146.0.0/19"
+add dst-address=211.146.32.0/21 gateway=pppoe-out1 comment="China Route: 211.146.32.0/21"
 add dst-address=211.147.0.0/18 gateway=pppoe-out1 comment="China Route: 211.147.0.0/18"
 add dst-address=211.147.64.0/19 gateway=pppoe-out1 comment="China Route: 211.147.64.0/19"
 add dst-address=211.147.128.0/19 gateway=pppoe-out1 comment="China Route: 211.147.128.0/19"

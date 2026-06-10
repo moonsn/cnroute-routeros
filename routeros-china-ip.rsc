@@ -1,5 +1,5 @@
 # RouterOS v7 中国 IP 路由表脚本
-# 生成时间: 2026年 06月10日 Wednesday 00时26分49秒 UTC
+# 生成时间: 2026年 06月10日 Wednesday 01时38分52秒 UTC
 # 数据源: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
 # 网关: pppoe-out1
 /ip route remove [find where comment~"China Route"]
@@ -388,7 +388,6 @@ add dst-address=45.117.8.0/22 gateway=pppoe-out1 comment="China Route: 45.117.8.
 add dst-address=45.117.68.0/22 gateway=pppoe-out1 comment="China Route: 45.117.68.0/22"
 add dst-address=45.119.60.0/22 gateway=pppoe-out1 comment="China Route: 45.119.60.0/22"
 add dst-address=45.119.68.0/22 gateway=pppoe-out1 comment="China Route: 45.119.68.0/22"
-add dst-address=45.119.104.0/23 gateway=pppoe-out1 comment="China Route: 45.119.104.0/23"
 add dst-address=45.119.116.0/22 gateway=pppoe-out1 comment="China Route: 45.119.116.0/22"
 add dst-address=45.120.100.0/22 gateway=pppoe-out1 comment="China Route: 45.120.100.0/22"
 add dst-address=45.120.164.0/22 gateway=pppoe-out1 comment="China Route: 45.120.164.0/22"
@@ -936,7 +935,7 @@ add dst-address=103.57.136.0/23 gateway=pppoe-out1 comment="China Route: 103.57.
 add dst-address=103.57.139.0/24 gateway=pppoe-out1 comment="China Route: 103.57.139.0/24"
 add dst-address=103.59.112.0/22 gateway=pppoe-out1 comment="China Route: 103.59.112.0/22"
 add dst-address=103.59.124.0/22 gateway=pppoe-out1 comment="China Route: 103.59.124.0/22"
-add dst-address=103.59.148.0/23 gateway=pppoe-out1 comment="China Route: 103.59.148.0/23"
+add dst-address=103.59.149.0/24 gateway=pppoe-out1 comment="China Route: 103.59.149.0/24"
 add dst-address=103.59.151.0/24 gateway=pppoe-out1 comment="China Route: 103.59.151.0/24"
 add dst-address=103.59.168.0/23 gateway=pppoe-out1 comment="China Route: 103.59.168.0/23"
 add dst-address=103.60.32.0/22 gateway=pppoe-out1 comment="China Route: 103.60.32.0/22"
@@ -1124,7 +1123,6 @@ add dst-address=103.152.150.0/23 gateway=pppoe-out1 comment="China Route: 103.15
 add dst-address=103.152.186.0/23 gateway=pppoe-out1 comment="China Route: 103.152.186.0/23"
 add dst-address=103.152.209.0/24 gateway=pppoe-out1 comment="China Route: 103.152.209.0/24"
 add dst-address=103.152.224.0/24 gateway=pppoe-out1 comment="China Route: 103.152.224.0/24"
-add dst-address=103.154.30.0/23 gateway=pppoe-out1 comment="China Route: 103.154.30.0/23"
 add dst-address=103.154.41.0/24 gateway=pppoe-out1 comment="China Route: 103.154.41.0/24"
 add dst-address=103.154.162.0/23 gateway=pppoe-out1 comment="China Route: 103.154.162.0/23"
 add dst-address=103.155.76.0/23 gateway=pppoe-out1 comment="China Route: 103.155.76.0/23"
@@ -1360,7 +1358,6 @@ add dst-address=103.251.204.0/24 gateway=pppoe-out1 comment="China Route: 103.25
 add dst-address=103.251.207.0/24 gateway=pppoe-out1 comment="China Route: 103.251.207.0/24"
 add dst-address=103.251.240.0/22 gateway=pppoe-out1 comment="China Route: 103.251.240.0/22"
 add dst-address=103.252.36.0/24 gateway=pppoe-out1 comment="China Route: 103.252.36.0/24"
-add dst-address=103.252.172.0/22 gateway=pppoe-out1 comment="China Route: 103.252.172.0/22"
 add dst-address=103.252.248.0/22 gateway=pppoe-out1 comment="China Route: 103.252.248.0/22"
 add dst-address=103.253.60.0/22 gateway=pppoe-out1 comment="China Route: 103.253.60.0/22"
 add dst-address=103.253.204.0/22 gateway=pppoe-out1 comment="China Route: 103.253.204.0/22"
@@ -3772,7 +3769,6 @@ add dst-address=220.243.153.0/24 gateway=pppoe-out1 comment="China Route: 220.24
 add dst-address=220.243.154.0/23 gateway=pppoe-out1 comment="China Route: 220.243.154.0/23"
 add dst-address=220.243.156.0/23 gateway=pppoe-out1 comment="China Route: 220.243.156.0/23"
 add dst-address=220.243.158.0/24 gateway=pppoe-out1 comment="China Route: 220.243.158.0/24"
-add dst-address=220.243.176.0/20 gateway=pppoe-out1 comment="China Route: 220.243.176.0/20"
 add dst-address=220.248.0.0/16 gateway=pppoe-out1 comment="China Route: 220.248.0.0/16"
 add dst-address=220.249.0.0/17 gateway=pppoe-out1 comment="China Route: 220.249.0.0/17"
 add dst-address=220.249.128.0/18 gateway=pppoe-out1 comment="China Route: 220.249.128.0/18"
